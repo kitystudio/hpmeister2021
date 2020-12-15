@@ -1,5 +1,6 @@
 # hpmeister2021
-ウェブサイト（[hpmeister.com](https://hpmeister.com)）のリデザイン記録です。
+ウェブサイト（[hpmeister.com](https://hpmeister.com)）のリデザイン記録です。  
+ベータ版は[https://2021.hpmeister.com](https://2021.hpmeister.com)に置きます。
 
 1. Illustratorでデザイン
 
