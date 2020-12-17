@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>hpmeister.com</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/spcss@0.5.0">
 </head>
 <body>
   <div class="thecontent">
