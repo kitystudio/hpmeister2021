@@ -41,8 +41,8 @@
     </section>
     <section id="service">
       <h1>services</h1>
-      <p>われわれが提供しているサービスをご紹介します。</p>
-<?php
+      <p>hpmeisterが提供しているサービスをご紹介します。</p>
+<?php // GoogleSpreadsheet
   $result = file('https://docs.google.com/spreadsheets/d/e/2PACX-1vQT1GF1SLIz-_IB4-LV2LWCvNrgj6W7vCVwnzJGVSPxygdMlPALrSmqhF6TxKo0C5CItx8MKB3YdYWl/pub?output=csv');
   for ( $i = 1; $i < sizeof( $result ); $i++ ) {
     list($id, $service, $description, $more, $disp) = explode( ",", $result[ $i ] );
