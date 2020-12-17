@@ -13,7 +13,7 @@
       <nav></nav>
     </header>
     <section id="news">
-<?php
+<?php // Blogger
   $info = simplexml_load_file("http://info.hpmeister.com/feeds/posts/default");
     //var_dump($info);
   echo '      <ul class="">'.PHP_EOL;
