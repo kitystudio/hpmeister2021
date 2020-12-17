@@ -50,7 +50,8 @@
       echo '      <div class="servicemember">'.PHP_EOL;
       echo '        <h3 class="">'.$service.'</h3>'.PHP_EOL;
       echo '        <p class="">'.$description.'</p>'.PHP_EOL;
-      echo '        <button onclick="location.href=\'/_assets/'.$more.'\'">read more</button>'.PHP_EOL;
+      echo '        <button onclick="">read more</button>'.PHP_EOL;
+      include_once '_assets/'.$more;
       echo '      </div>'.PHP_EOL;
     }
   
