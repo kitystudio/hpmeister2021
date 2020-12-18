@@ -1,4 +1,14 @@
-
-header {
+* {
+  color: #666;
+}
+header, footer h2 {
   background-color: #9E005D;
+}
+
+footer {
+  background-color: #e0e0e0;
+}
+
+.thecontent {
+  background-color: #fff;
 }

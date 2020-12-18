@@ -1,20 +1,12 @@
 @import url("common.css");
 
-@media (prefers-color-scheme: dark) {
-  @import url("dark.css");
-}
+@import url("small.css") screen and (max-width: 414px);
 
-@media (prefers-color-scheme: light) {
-  @import url("light.css");
-}
+@import url("big.css") print, screen and (min-width: 415px);
 
-@media only screen and (max-width: 414px) {
-  @import url("small.css");
-}
+@import url("dark.css") (prefers-color-scheme: dark) ;
 
-@media only print, screen and (min-width: 415px) {
-  @import url("big.css");
-}
+@import url("light.css") (prefers-color-scheme: light) ;
 
 
 
