@@ -1,0 +1,85 @@
+* {
+  font-size: 14px;
+  font-family:  -apple-system, BlinkMacSystemFont, system-ui, 'Helvetica Neue', 'Hiragino Kaku Gothic ProN', '游ゴシック  Medium', meiryo, sans-serif;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  line-height: 1.8rem;
+  font-feature-settings: "palt";
+  -webkit-text-size-adjust: none;/* Chrome84からは必須 実際より小さく表示されるため */
+  text-size-adjust: none;
+}
+section, header, footer {
+  padding-bottom: 4rem;
+}
+
+p, input[type=text], textarea {
+  font-size: 16px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+.thecontent {
+  width: 100%;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.servicedetail {
+  display: none;
+}
+
+footer {
+}
+
+footer ul.socmed {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer ul.socmed li {
+  display: block;
+}
+
+footer ul.socmed li img {
+  object-fit: contain;
+  height: 20px;
+  vertical-align: middle;
+  padding-right: 5px;
+}
+
+
+.wrapper {
+  width: 90%;
+  max-width: 800px;
+  margin: auto;
+}
+
+
+.footerbottom {
+  padding-top: 35px;
+  text-align: center;
+}
+
+footer a {
+  padding: 5px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+small {
+  font-size: 12px;
+}

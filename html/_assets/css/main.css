@@ -1,0 +1,19 @@
+@import url("common.css");
+
+@media (prefers-color-scheme: dark) {
+  @import url("dark.css");
+}
+
+@media (prefers-color-scheme: light) {
+  @import url("light.css");
+}
+
+@media only screen and (max-width: 414px) {
+  @import url("small.css");
+}
+
+@media only print, screen and (min-width: 415px) {
+  @import url("big.css");
+}
+
+
