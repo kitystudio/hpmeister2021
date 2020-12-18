@@ -89,7 +89,7 @@
       <div class="wrapper">
         <h2>お問い合わせ</h2>
         <ul class="socmed">
-          <li><a href="mailto:info@hpmeister.com?body=ここを消したのち、お問い合わせの内容をお書きください" target="_blank"><img src="/_assets/mail.svg" alt="">email</a></li>
+          <li><a href="mailto:infodesk@hpmeister.com?body=ここを消したのち、お問い合わせの内容をお書きください" target="_blank"><img src="/_assets/mail.svg" alt="">email</a></li>
           <li><a href="https://twitter.com/hpmeister" target="_blank"><img src="/_assets/twitter.svg" alt="">Twitter</a></li>
           <li><a href="https://www.instagram.com/hpmeister/" target="_blank"><img src="/_assets/instagram.svg" alt="">Instagram</a></li>
           <li><a href="https://github.com/kitystudio" target="_blank"><img src="/_assets/github.svg" alt="">GitHub</a></li>

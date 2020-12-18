@@ -78,6 +78,10 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 5px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: 30px;
 }
 
 small {
