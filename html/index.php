@@ -55,7 +55,7 @@
       echo '      <div class="servicemember">'.PHP_EOL;
       echo '        <h3 class="">'.$service.'</h3>'.PHP_EOL;
       echo '        <p class="">'.$description.'</p>'.PHP_EOL;
-      echo '        <button onclick="">read more</button>'.PHP_EOL;
+      echo '        <button class="servicedetail_button" onclick="">read more</button>'.PHP_EOL;
       include_once '_assets/'.$more;
       echo '      </div>'.PHP_EOL;
     }
@@ -85,9 +85,13 @@
         </div>
       </div>
     </section>
-    <footer>
+    <footer class="title">
       <div class="wrapper">
         <h2>お問い合わせ</h2>
+      </div>
+    </footer>
+    <footer class="content">
+      <div class="wrapper">
         <ul class="socmed">
           <li><a href="mailto:infodesk@hpmeister.com?body=ここを消したのち、お問い合わせの内容をお書きください" target="_blank"><img src="/_assets/mail.svg" alt="">email</a></li>
           <li><a href="https://twitter.com/hpmeister" target="_blank"><img src="/_assets/twitter.svg" alt="">Twitter</a></li>

@@ -1,8 +1,9 @@
 * {
   color: #666;
 }
-header, footer h2 {
+header, footer.title {
   background-color: #9E005D;
+  color: #E0E0E0;
 }
 
 footer {
@@ -10,5 +11,17 @@ footer {
 }
 
 .thecontent {
+  background-color: #f8f8f8;
+}
+
+body {
+  background-color: #666;
+}
+
+.servicedetail {
   background-color: #fff;
+}
+
+button {
+  background-color: #00ccff;
 }
