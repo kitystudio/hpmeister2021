@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>hpmeister.com</title>
   <link rel="stylesheet" href="/_assets/css/main.css">
 </head>
+
 <body>
   <div class="thecontent">
     <header>
       <div class="logo"><a href=""><img src="/_assets/logo.svg" alt="hpmeister logo" width="160"></a></div>
       <nav>
-        <img src="/_assets/menu.svg" alt="" width="30">
+        <img src="/_assets/menu.svg" alt="" width="30" class="menutoggle">
         <div class="menu">
           <ul>
             <li><a href="#news">page top</a></li>
@@ -25,27 +27,31 @@
     <section id="news">
       <div class="wrapper">
         <h2 class="sectiontitle">information</h2>
+        <ul>
 <?php // Blogger
   $info = simplexml_load_file("http://info.hpmeister.com/feeds/posts/default");
   //var_dump($info);
-  echo '      <ul class="">'.PHP_EOL;
   foreach ($info->entry as $content) {
-    echo '        <li>'.nl2br($content->content).'</li>'.PHP_EOL;
-  }
-  echo '      </ul>'.PHP_EOL;
 ?>
+          <li><?=nl2br($content->content)?></li>
+<?php
+  }
+?>
+        </ul>
       </div>
     </section>
     <section id="blog">
       <div class="wrapper">
         <h2 class="sectiontitle">blog</h2>
-<!--        <p>覚え書きとしてブログを使用しています。</p>-->
+        <!--        <p>覚え書きとしてブログを使用しています。</p>-->
         <ul>
 <?php // ライブドアブログ
   $blog = simplexml_load_file("http://lifelog.hpmeister.com/index.rdf");
   //var_dump($blog);
   foreach ($blog->item as $content) {
-    echo '        <li><a href="'.$content->link.'" target="_blank">'.$content->title.'</a></li>'.PHP_EOL;
+?>
+          <li><a href="<?=$content->link?>" target="_blank"><?=$content->title?></a></li>
+<?php
     $i++;
     if ($i > 9) { break; }
   }
@@ -68,7 +74,7 @@
         <div class="servicemember">
           <h3 class="title"><?=$service?></h3>
           <p class="description"><?=$description?></p>
-          <button class="servicedetail_button" onclick="">read more</button>
+          <button class="servicedetail_button">read more</button>
 <?php
       include_once '_assets/'.$more;
 ?>
@@ -123,5 +129,8 @@
       </div>
     </footer>
   </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="crossorigin="anonymous"></script>
+  <script src="/_assets/main.js"></script>
 </body>
+
 </html>

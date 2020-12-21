@@ -48,13 +48,14 @@ h2 {
 }
 
 .servicedetail {
-/*  display: none;*/
+  display: none;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 /*  margin: auto;*/
   width: 75%;
+  max-width: 480px;
   padding: 2rem;
   border-radius: 15px;
   box-shadow: 0px 0px 20px 0px;
@@ -148,6 +149,7 @@ footer.content {
 }
 
 .menu {
+  display: none;
   position: absolute;
   top: 45px;
   right: 1rem;
