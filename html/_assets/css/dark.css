@@ -24,3 +24,12 @@ body {
 button {
   background-color: #07718b;
 }
+.menu li a {
+  background-color: #000;
+  color: #e0e0e0;
+}
+
+footer.content .socmed img {
+  filter:invert(100%);
+  -webkit-filter:invert(100%);
+}

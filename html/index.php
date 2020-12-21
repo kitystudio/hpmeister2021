@@ -10,11 +10,21 @@
   <div class="thecontent">
     <header>
       <div class="logo"><a href=""><img src="/_assets/logo.svg" alt="hpmeister logo" width="160"></a></div>
-      <nav><img src="/_assets/menu.svg" alt="" width="30"></nav>
+      <nav>
+        <img src="/_assets/menu.svg" alt="" width="30">
+        <div class="menu">
+          <ul>
+            <li><a href="#news">page top</a></li>
+            <li><a href="#service">service</a></li>
+            <li><a href="#prof">profile</a></li>
+            <li><a href="#contact">contact</a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
     <section id="news">
       <div class="wrapper">
-        <h2>information</h2>
+        <h2 class="sectiontitle">information</h2>
 <?php // Blogger
   $info = simplexml_load_file("http://info.hpmeister.com/feeds/posts/default");
   //var_dump($info);
@@ -28,8 +38,8 @@
     </section>
     <section id="blog">
       <div class="wrapper">
-        <h2>blog</h2>
-        <p>覚え書きとしてブログを使用しています。</p>
+        <h2 class="sectiontitle">blog</h2>
+<!--        <p>覚え書きとしてブログを使用しています。</p>-->
         <ul>
 <?php // ライブドアブログ
   $blog = simplexml_load_file("http://lifelog.hpmeister.com/index.rdf");
@@ -45,7 +55,7 @@
     </section>
     <section id="service">
       <div class="wrapper">
-        <h2>services</h2>
+        <h2 class="sectiontitle">services</h2>
         <p>hpmeisterが提供しているサービスをご紹介します。</p>
 <?php // GoogleSpreadsheet
   $result = file('https://docs.google.com/spreadsheets/d/e/2PACX-1vQT1GF1SLIz-_IB4-LV2LWCvNrgj6W7vCVwnzJGVSPxygdMlPALrSmqhF6TxKo0C5CItx8MKB3YdYWl/pub?output=csv');
@@ -66,23 +76,25 @@
     </section>
     <section id="prof">
       <div class="wrapper">
-        <h2>profile</h2>
+        <h2 class="sectiontitle">profile</h2>
         <p>hpmeisterのプロフィールです。</p>
-        <div class="profwrapper">
+      </div>
+      <div class="profwrapper">
 <?php // GoogleSpreadsheet
   $result = file('https://docs.google.com/spreadsheets/d/e/2PACX-1vTnVB73Kdp6FWAfcBn5aP7NSZ3G4pXlNhgPV22pkHaPPOQTV727vTgTeFGu9emndeLHPp-pAHCFkWg3/pub?output=csv');
   for ( $i = 1; $i < sizeof( $result ); $i++ ) {
     list($year, $hpm, $world) = explode( ",", $result[ $i ] );
-    echo '        <ul class="year">'.PHP_EOL;
-    echo '          <li class="title">'.$year.'</h3>'.PHP_EOL;
-    echo '          <li class="">'.$hpm.'</li>'.PHP_EOL;
-    echo '          <li class="">世の中の出来事</li>'.PHP_EOL;
-    echo '          <li class="">'.$world.'</li>'.PHP_EOL;
-    echo '        </ul>'.PHP_EOL;
+?>
 
+        <ul class="year">
+          <li class="title"><?=$year?></li>
+          <li class=""><?=$hpm?></li>
+          <li class="static">世の中の出来事</li>
+          <li class=""><?=$world?></li>
+        </ul>
+<?php
   }
 ?>
-        </div>
       </div>
     </section>
     <footer class="title">
@@ -90,7 +102,7 @@
         <h2>お問い合わせ</h2>
       </div>
     </footer>
-    <footer class="content">
+    <footer class="content" id="contact">
       <div class="wrapper">
         <ul class="socmed">
           <li><a href="mailto:infodesk@hpmeister.com?body=ここを消したのち、お問い合わせの内容をお書きください" target="_blank"><img src="/_assets/mail.svg" alt="">email</a></li>
