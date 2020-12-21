@@ -57,17 +57,23 @@
       <div class="wrapper">
         <h2 class="sectiontitle">services</h2>
         <p>hpmeisterが提供しているサービスをご紹介します。</p>
+      </div>
+      <div class="serviceswrapper">
 <?php // GoogleSpreadsheet
   $result = file('https://docs.google.com/spreadsheets/d/e/2PACX-1vQT1GF1SLIz-_IB4-LV2LWCvNrgj6W7vCVwnzJGVSPxygdMlPALrSmqhF6TxKo0C5CItx8MKB3YdYWl/pub?output=csv');
   for ( $i = 1; $i < sizeof( $result ); $i++ ) {
     list($id, $service, $description, $more, $disp) = explode( ",", $result[ $i ] );
     if ($disp == 1) {
-      echo '      <div class="servicemember">'.PHP_EOL;
-      echo '        <h3 class="">'.$service.'</h3>'.PHP_EOL;
-      echo '        <p class="">'.$description.'</p>'.PHP_EOL;
-      echo '        <button class="servicedetail_button" onclick="">read more</button>'.PHP_EOL;
+?>
+        <div class="servicemember">
+          <h3 class="title"><?=$service?></h3>
+          <p class="description"><?=$description?></p>
+          <button class="servicedetail_button" onclick="">read more</button>
+<?php
       include_once '_assets/'.$more;
-      echo '      </div>'.PHP_EOL;
+?>
+        </div>
+<?php
     }
   
   }
@@ -82,15 +88,16 @@
       <div class="profwrapper">
 <?php // GoogleSpreadsheet
   $result = file('https://docs.google.com/spreadsheets/d/e/2PACX-1vTnVB73Kdp6FWAfcBn5aP7NSZ3G4pXlNhgPV22pkHaPPOQTV727vTgTeFGu9emndeLHPp-pAHCFkWg3/pub?output=csv');
-  for ( $i = 1; $i < sizeof( $result ); $i++ ) {
+//  for ( $i = 1; $i < sizeof( $result ); $i++ ) {
+  for ( $i = sizeof( $result ) - 1; $i > 0; $i-- ) {
     list($year, $hpm, $world) = explode( ",", $result[ $i ] );
 ?>
 
         <ul class="year">
           <li class="title"><?=$year?></li>
-          <li class=""><?=$hpm?></li>
+          <li class="personal"><?=$hpm?></li>
           <li class="static">世の中の出来事</li>
-          <li class=""><?=$world?></li>
+          <li class="world"><?=$world?></li>
         </ul>
 <?php
   }

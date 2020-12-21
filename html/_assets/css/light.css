@@ -22,10 +22,21 @@ body {
   background-color: #fff;
 }
 
-button {
+button.servicedetail_button {
   background-color: #00ccff;
+  border: none;
+}
+button.close {
+  border-color: #00ccff;
+  border: 1px solid;
+  color: #00ccff;
+  background-color: transparent;
 }
 .menu li a {
   background-color: #e0e0e0;
-  color: #0;
+  color: #000;
+}
+
+.servicemember {
+  border-color: #0cf;
 }

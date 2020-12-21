@@ -21,8 +21,15 @@ body {
 .servicedetail {
   background-color: #000;
 }
-button {
+button.servicedetail_button {
   background-color: #07718b;
+  border: none;
+}
+button.close {
+  color: #07718b;
+  border: 1px solid;
+  background-color: transparent;
+  border-color: #07718b;
 }
 .menu li a {
   background-color: #000;
@@ -32,4 +39,8 @@ button {
 footer.content .socmed img {
   filter:invert(100%);
   -webkit-filter:invert(100%);
+}
+
+.servicemember {
+  border-color: #07718b;
 }
