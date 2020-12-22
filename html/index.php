@@ -11,7 +11,7 @@
 <body>
   <div class="thecontent">
     <header>
-      <div class="logo"><a href=""><img src="/_assets/logo.svg" alt="hpmeister logo" width="160"></a></div>
+      <div class="logo"><a href="https://2021.hpmeister.com/"><img src="/_assets/logo.svg" alt="hpmeister logo" width="160"></a></div>
       <nav>
         <img src="/_assets/menu.svg" alt="" width="30" class="menutoggle">
         <div class="menu">
@@ -118,10 +118,10 @@
     <footer class="content" id="contact">
       <div class="wrapper">
         <ul class="socmed">
-          <li><a href="mailto:infodesk@hpmeister.com?body=ここを消したのち、お問い合わせの内容をお書きください" target="_blank"><img src="/_assets/mail.svg" alt="">email</a></li>
-          <li><a href="https://twitter.com/hpmeister" target="_blank"><img src="/_assets/twitter.svg" alt="">Twitter</a></li>
-          <li><a href="https://www.instagram.com/hpmeister/" target="_blank"><img src="/_assets/instagram.svg" alt="">Instagram</a></li>
-          <li><a href="https://github.com/kitystudio" target="_blank"><img src="/_assets/github.svg" alt="">GitHub</a></li>
+          <li><a href="mailto:infodesk@hpmeister.com?body=ここを消したのち、お問い合わせの内容をお書きください" target="_blank"><img src="/_assets/mail.svg" alt="email">email</a></li>
+          <li><a href="https://twitter.com/hpmeister" target="_blank"><img src="/_assets/twitter.svg" alt="Twitter">Twitter</a></li>
+          <li><a href="https://www.instagram.com/hpmeister/" target="_blank"><img src="/_assets/instagram.svg" alt="Instagram">Instagram</a></li>
+          <li><a href="https://github.com/kitystudio" target="_blank"><img src="/_assets/github.svg" alt="GiyHub">GitHub</a></li>
         </ul>
         <div class="footerbottom">
           <small>Copyright &copy; hpmeister.com All Rights Reserved.</small>
@@ -129,7 +129,7 @@
       </div>
     </footer>
   </div>
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
   <script src="/_assets/main.js"></script>
 </body>
 
