@@ -89,7 +89,7 @@
     <section id="prof">
       <div class="wrapper">
         <h2 class="sectiontitle">profile</h2>
-        <p>hpmeisterのプロフィールです。</p>
+        <p>hpmeisterの経歴とプロフィールです。</p>
       </div>
       <div class="profwrapper">
 <?php // GoogleSpreadsheet
