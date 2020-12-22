@@ -23,13 +23,13 @@ body {
 }
 
 button.servicedetail_button {
-  background-color: #00ccff;
+  background-color: #2F75EB;
   border: none;
 }
 button.close {
-  border-color: #00ccff;
+  border-color: #2F75EB;
   border: 1px solid;
-  color: #00ccff;
+  color: #2F75EB;
   background-color: transparent;
 }
 .menu li a {
@@ -38,5 +38,5 @@ button.close {
 }
 
 .servicemember {
-  border-color: #0cf;
+  border-color: #2F75EB;
 }

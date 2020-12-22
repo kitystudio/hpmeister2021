@@ -1,6 +1,7 @@
 * {
   font-size: 14px;
-  font-family:  -apple-system, BlinkMacSystemFont, roboto, system-ui, 'Helvetica Neue', 'Hiragino Kaku Gothic ProN', 'メイリオ', meiryo,  '游ゴシック  Medium', sans-serif;
+  font-family:  -apple-system, BlinkMacSystemFont, roboto;
+/*  font-family:  -apple-system, BlinkMacSystemFont, roboto, system-ui, 'Helvetica Neue', 'Hiragino Kaku Gothic ProN', 'メイリオ', meiryo,  '游ゴシック  Medium', sans-serif;*/
   list-style: none;
   padding: 0;
   margin: 0;
@@ -14,6 +15,7 @@ section a {
   text-decoration: none;
   border-bottom: solid 2px;
   padding-bottom: 2px;
+  margin-right: 5px;
 }
 
 section li {
@@ -108,7 +110,7 @@ footer ul.socmed li img {
 
 .wrapper {
   width: 90%;
-  max-width: 800px;
+  max-width: 680px;
   margin: auto;
 }
 
@@ -153,11 +155,12 @@ footer.content {
   position: absolute;
   top: 45px;
   right: 1rem;
+  
 }
 
 .menu li a {
   display: block;
-  padding: 5px 10px;
+  padding: 1rem 2rem;
   margin: 1px 0;
   text-decoration: none;
   font-size: 20px;
