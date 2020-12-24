@@ -182,11 +182,9 @@ footer.content {
 .year {
   border: 1px solid;
   border-radius: 5px;
-  -ms-overflow-style: none;/* IE, Edge 対応 */
   padding: 5px;
   margin: 0 5px;
   scroll-snap-align: start;
-/*  align-items: center;*/
   flex: 0 0 156px;
 }
 
@@ -204,8 +202,6 @@ footer.content {
   overflow: auto;
   scroll-snap-type: x mandatory;
   scroll-padding: 1rem;
-  flex-flow: row nowrap;
-  
 }
 
 .year .static {
@@ -225,7 +221,6 @@ footer.content {
   scroll-snap-align: start;
   align-items: center;
   flex: 0 0 156px;
-  justify-content: center;
 }
 
 .servicemember > .title {
