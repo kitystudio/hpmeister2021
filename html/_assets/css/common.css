@@ -11,6 +11,10 @@
   text-size-adjust: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 section a {
   text-decoration: none;
   border-bottom: solid 2px;
