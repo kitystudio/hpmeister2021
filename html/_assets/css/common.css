@@ -11,6 +11,10 @@
   text-size-adjust: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 section a {
   text-decoration: none;
   border-bottom: solid 2px;
@@ -55,6 +59,7 @@ h2 {
 
 .servicedetail {
   display: none;
+  z-index: 100;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -129,6 +134,7 @@ footer a {
 
 header {
   display: flex;
+  z-index: 50;
   justify-content: space-between;
   padding: 1rem;
   position: sticky;
@@ -208,9 +214,11 @@ footer.content {
 }
 
 .servicemember {
+  position: relative;
   border: 1px solid;
   border-radius: 5px;
-  padding: 15px 5px;
+  padding: 15px 10px;
+  height: 12rem;
   -ms-overflow-style: none;/* IE, Edge 対応 */
   margin: 0 5px;
   
@@ -226,7 +234,7 @@ footer.content {
 }
 
 .servicemember .description {
-  font-size: 12px;
+  font-size: 14px;
   text-align: center;
   margin-bottom: 1rem;
 }
@@ -240,3 +248,11 @@ li.personal, li.world {
 }
 
 
+
+.servicedetail_button {
+  width: 10rem;
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  right: 0;
+}

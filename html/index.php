@@ -75,7 +75,7 @@
         <div class="servicemember">
           <h3 class="title"><?=$service?></h3>
           <p class="description"><?=$description?></p>
-          <button class="servicedetail_button">read more</button>
+          <button class="servicedetail_button" title="<?=$service?>を詳しく見る">read more</button>
 <?php
       include_once '_assets/'.$more;
 ?>
