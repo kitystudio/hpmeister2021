@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="大阪でデザインするhpmeisterのホームページ。ウェブやグラフィック等のデザインが可能。">
   <title>hpmeister.com</title>
   <link rel="stylesheet" href="/_assets/css/main.css">
 </head>

@@ -1,0 +1,8 @@
+footer ul.socmed {
+  justify-content: space-between;
+}
+
+footer ul.socmed li {
+  overflow: hidden;
+  white-space:  nowrap;
+}

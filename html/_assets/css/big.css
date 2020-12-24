@@ -1,3 +1,11 @@
+footer ul.socmed {
+  justify-content: center;
+}
+
+footer ul.socmed li {
+  padding-left: 20px;
+  padding-right: 20px;
+}
 
 .menutoggle:hover, button {
   cursor: pointer;

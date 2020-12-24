@@ -96,7 +96,6 @@ footer.title h2 {
 
 footer ul.socmed {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -217,7 +216,7 @@ footer.content {
   padding: 15px 5px;
   display: inline-block;
   vertical-align: top;
-  overflow-y: scroll;
+/*  overflow-y: scroll;*/
   -ms-overflow-style: none;/* IE, Edge 対応 */
   white-space: normal;
   margin: 0 5px;
