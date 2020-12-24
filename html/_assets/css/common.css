@@ -197,7 +197,7 @@ footer.content {
   margin: 0 -5px 5px;
 }
 
-.profwrapper, .serviceswrapper {
+.profwrapper {
   padding: 25px 0;
   line-height: 0;
 /*  width: 100%;*/
@@ -218,12 +218,8 @@ footer.content {
   border: 1px solid;
   border-radius: 5px;
   padding: 15px 5px;
-  display: inline-block;
-  vertical-align: top;
-/*  overflow-y: scroll;*/
-  -ms-overflow-style: none;/* IE, Edge 対応 */
-  white-space: normal;
   margin: 0 5px;
+  flex: 0 0 156px;
 }
 
 .servicemember > .title {
@@ -246,3 +242,8 @@ li.personal, li.world {
 }
 
 
+
+.serviceswrapper {
+  display: flex;
+  overflow-x: auto;
+}

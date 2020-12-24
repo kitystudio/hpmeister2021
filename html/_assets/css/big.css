@@ -15,3 +15,6 @@ section a:hover, nav a:hover {
   color: #2F75EB!important;
   transition: 1s;
 }
+.serviceswrapper {
+  justify-content: center;
+}
