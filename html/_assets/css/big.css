@@ -16,5 +16,9 @@ section a:hover, nav a:hover {
   transition: 1s;
 }
 .serviceswrapper {
+<<<<<<< HEAD
   justify-content: unsafe center;
+=======
+  justify-content: center;
+>>>>>>> 49ad71d4d4ba827fb97f1dc969fd20b37c15160b
 }

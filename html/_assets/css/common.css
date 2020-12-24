@@ -195,7 +195,7 @@ footer.content {
   text-align: center;
 }
 
-.profwrapper, .serviceswrapper {
+.profwrapper {
   padding: 25px 0;
   
   display: flex;
@@ -213,6 +213,7 @@ footer.content {
   position: relative;
   border: 1px solid;
   border-radius: 5px;
+<<<<<<< HEAD
   padding: 15px 10px;
   height: 12rem;
   -ms-overflow-style: none;/* IE, Edge 対応 */
@@ -220,6 +221,10 @@ footer.content {
   
   scroll-snap-align: start;
   align-items: center;
+=======
+  padding: 15px 5px;
+  margin: 0 5px;
+>>>>>>> 49ad71d4d4ba827fb97f1dc969fd20b37c15160b
   flex: 0 0 156px;
 }
 
@@ -244,10 +249,16 @@ li.personal, li.world {
 
 
 
+<<<<<<< HEAD
 .servicedetail_button {
   width: 10rem;
   position: absolute;
   bottom: 15px;
   left: 0;
   right: 0;
+=======
+.serviceswrapper {
+  display: flex;
+  overflow-x: auto;
+>>>>>>> 49ad71d4d4ba827fb97f1dc969fd20b37c15160b
 }
