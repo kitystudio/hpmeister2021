@@ -5,8 +5,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="大阪でデザインするhpmeisterのホームページ。ウェブやグラフィック等のデザインが可能。">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@hpmeister">
+  <meta property="og:url" content="https://hpmeister.com">
+  <meta property="og:title" content="hpmeister.com">
+  <meta property="og:description" content="大阪でデザインするhpmeisterのホームページ。ウェブやグラフィック等のデザインが可能。">
+  <meta property="og:image" content="https://hpmeister.com/site.png">
+  <meta name="msapplication-TileImage" content="https://hpmeister.com/site.png">
+  <meta name="msapplication-TileColor" content="#000">
   <title>hpmeister.com</title>
   <link rel="stylesheet" href="/_assets/css/main.css">
+  <link rel="icon" href="https://hpmeister.com/site.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon-precomposed" href="https://hpmeister.com/site.png">
 </head>
 
 <body>
